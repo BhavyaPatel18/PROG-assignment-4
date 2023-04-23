@@ -14,8 +14,8 @@ class List:
        
     def write(self):
         with open('Cineplex.csv','w') as csv_file:
-            field_names = ['tickit_no','last_name','seat_no']
-            writer = csv.DictWriter(csv_file, fieldnames=field_names, delimiter = ",")
+            hello_names = ['tickit_no','last_name','seat_no']
+            writer = csv.DictWriter(csv_file, hellonames=hello_names, delimiter = ",")
             writer.writeheader()
             for line in self.Cineplex:
                 writer.writerow({'tickit_no':line[0], 'last_name':line[1], 'seat_no':line[2]})
